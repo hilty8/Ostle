@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="direction" stylesheets="@DirectionButton.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boardpieceexam.DirectionButtonController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="30.0" strokeType="INSIDE" width="30.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="30.0" strokeType="INSIDE" width="30.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      
+        <StackPane fx:id="upPane" prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <children>
+                <Polygon fx:id="upButton" stroke="BLACK" strokeType="INSIDE" styleClass="triangle" fill="green">
+                    <points>
+                        <Double fx:value="15.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="30.0" />
+                        <Double fx:value="30.0" />
+                        <Double fx:value="30.0" />
+                    </points>
+                </Polygon>
+            </children>
+        </StackPane>
+      
+        <StackPane fx:id="downPane" prefHeight="30.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <children>
+                <Polygon fx:id="downButton" stroke="BLACK" strokeType="INSIDE" styleClass="triangle" fill="green">
+                    <points>
+                        <Double fx:value="0.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="15.0" />
+                        <Double fx:value="30.0" />
+                        <Double fx:value="30.0" />
+                        <Double fx:value="0.0" />
+                    </points>
+                </Polygon>
+            </children>
+        </StackPane>
+      
+        <StackPane fx:id="leftPane" prefHeight="70.0" prefWidth="30.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <children>
+                <Polygon fx:id="leftButton" stroke="BLACK" strokeType="INSIDE" styleClass="triangle" fill="green">
+                    <points>
+                        <Double fx:value="30.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="15.0" />
+                        <Double fx:value="30.0" />
+                        <Double fx:value="30.0" />
+                    </points>
+                </Polygon>
+            </children>
+        </StackPane>
+      
+        <StackPane fx:id="rightPane" prefHeight="70.0" prefWidth="30.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <children>
+                <Polygon fx:id="rightButton" stroke="BLACK" strokeType="INSIDE" styleClass="triangle" fill="green">
+                    <points>
+                        <Double fx:value="0.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="30.0" />
+                        <Double fx:value="15.0" />
+                        <Double fx:value="0.0" />
+                        <Double fx:value="30.0" />
+                    </points>
+                </Polygon>
+            </children>
+        </StackPane>
+        
+        <StackPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <Circle fx:id="cancelButton" fill="#ff1ff0" opacity="0.2" radius="27.0" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </Circle>
+                <Label text="Cancel" fx:id="cancelButtonLabel"/>
+            </children>
+        </StackPane>
+      
+    </children>
+    
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
